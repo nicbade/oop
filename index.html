@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>OOP</title>
+</head>
+
+<body>
+    <h1>Are you down with OOP?</h1>
+    <script>
+        class Beverages {
+            constructor(capacity) {
+                this.capacity = capacity;
+            }
+
+
+        }
+
+        class Beer extends Beverages {
+            constructor(capacity, style, abv) {
+                super(capacity);
+                this.style = style; // Beer style
+                this.abv = abv;
+            }
+        }
+
+        class Wine extends Beverages {
+            constructor(capacity, color, grape) {
+                super(capacity);
+                this.color = color;
+                this.grape = grape;
+            }
+        }
+
+        let BelgianBeer = new Beer('10 oz', 'Belgian', 7.2);
+        console.log(BelgianBeer);
+        let PinotNoir = new Wine('6 oz', 'Pinot Noir', 'Pinot Noir');
+        console.log(PinotNoir);
+    </script>
+</body>
+
+</html>
